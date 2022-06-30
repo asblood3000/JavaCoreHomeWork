@@ -12,20 +12,11 @@ public class Box<T>{
         if (currentWeight + 1 <= maxWeight) {
             arrayList.add(fruit);
             currentWeight++;
+            System.out.println("Фрукты добавлены в коробку");
             if (arrayList.size() < 1)
                 isFree = false;
         } else
             System.out.println("Коробка полная");
-    }
-
-    float getWeight(Fruit f) {
-        return arrayList.size() * f.getWeight();
-    }
-
-    boolean compare(Fruit f1, Fruit f2) {
-        if (getWeight(f1) == getWeight(f2)) {
-            return true;
-        } else return false;
     }
 
     public boolean compare(Box box) {

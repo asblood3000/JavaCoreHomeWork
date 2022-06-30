@@ -1,5 +1,7 @@
 package Lesson3.task2;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
         Apple apl = new Apple();
