@@ -35,7 +35,7 @@ public class CreateFileClass {
 
     public static void read() throws IOException {
         try (FileReader reader = new FileReader(pathToFile)) {
-            int a =
+            int a =234
             reader.read();
         }
     }
