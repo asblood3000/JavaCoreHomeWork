@@ -13,6 +13,7 @@ public class CreateFileClass {
     public static void main(String[] args) throws IOException {
         createFileObjects();
         writer();
+        read();
     }
 
     public static void createFileObjects(){
@@ -23,12 +24,19 @@ public class CreateFileClass {
     }
 
     public static void writer() throws IOException {
-        try (FileWriter writer = new FileWriter(pathToFile);){
+        try (FileWriter writer = new FileWriter(pathToFile)){
             writer.write(title);
             for(FIleObject fIleObject : fIleObjectArrayList) {
                 writer.write(fIleObject.getValue1() + ";" + fIleObject.getValue2()
                         + ";" + fIleObject.getValue3() + ";"+ System.getProperty("line.separator"));
             }
+        }
+    }
+
+    public static void read() throws IOException {
+        try (FileReader reader = new FileReader(pathToFile)) {
+            int a =
+            reader.read();
         }
     }
 }
